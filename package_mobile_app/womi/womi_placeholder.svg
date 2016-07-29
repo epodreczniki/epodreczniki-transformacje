@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="1920"
+   height="1080"
+   id="svg2">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3767">
+      <stop
+         id="stop3769"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3771"
+         style="stop-color:#e6e6e6;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3755">
+      <stop
+         id="stop3757"
+         style="stop-color:#b4b4b4;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3763"
+         style="stop-color:#b4b4b4;stop-opacity:0.49803922"
+         offset="0.5" />
+      <stop
+         id="stop3759"
+         style="stop-color:#b4b4b4;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       cx="923.14825"
+       cy="554.7605"
+       r="630.86621"
+       fx="923.14825"
+       fy="554.7605"
+       id="radialGradient3775"
+       xlink:href="#linearGradient3767"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.80561577,-1.7766059,1.8154208,-1.5554008,812.33443,3248.8475)" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-115.75524,-205.90181)"
+     id="layer1">
+    <rect
+       width="1920"
+       height="1080"
+       x="115.75524"
+       y="205.90181"
+       id="rect3765"
+       style="color:#000000;fill:url(#radialGradient3775);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  </g>
+</svg>

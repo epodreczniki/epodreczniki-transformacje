@@ -1,0 +1,450 @@
+--- <bez nazwy>
++++ <bez nazwy>
+@@ -1,92 +1,44 @@
+ <?xml version="1.0"?>
+-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:cnx="http://cnx.rice.edu/cnxml" version="1.0">
++<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
++	xmlns:cnx="http://cnx.rice.edu/cnxml" 
++	xmlns:md="http://cnx.rice.edu/mdml"
++	xmlns:ep="http://epodreczniki.pl/"
++	exclude-result-prefixes="cnx md"
++	version="2.0">
+   
+ 
+   <xsl:template match="cnx:table">
+-    <div class="table">
++    <xsl:variable name="module_id" select="ancestor::cnx:document/@module-id"/>
++    <div>
++      <xsl:attribute name="ep:role">
++        <xsl:text>table</xsl:text>
++        <xsl:if
++          test="some $x in ('biologia', 'chemia', 'edukacja dla bezpieczeństwa', 'fizyka', 'geografia', 'przyroda') satisfies contains($subject,$x)">
++          <xsl:text> table-layout-auto</xsl:text>
++        </xsl:if>
++
++        <xsl:value-of select="ep:add_additional_class_for_block_elements(.)"/>        
++      </xsl:attribute>
+       <xsl:call-template name="IdCheck"/>
+-      <xsl:choose>
+-	<!-- OLD TABLES -->
+-	<xsl:when test="cnx:categories">
+-          <xsl:apply-templates select="cnx:name"/>
+-	  <table class="old-table" cellspacing="0" cellpadding="0" align="center" style="border: 1px solid !important; border-collapse: collapse;">
+-	    <!--Outputs CATEGORY as headers.-->
+-	    <tr>
+-	      <xsl:for-each select="//cnx:category">
+-		<th style="border: 1px solid !important;">
+-		  <xsl:apply-templates/>
+-		</th>
+-	      </xsl:for-each>
+-	    </tr>
+-	    <!--Outputs the content of ELEMs in the order they are listed within each GROUP.-->
+-	    <xsl:for-each select="cnx:group">
+-	      <tr>
+-		<xsl:for-each select="cnx:elem">
+-		  <td style="border: 1px solid !important;">
+-		    <xsl:apply-templates/>
+-		  </td>
+-		</xsl:for-each>
+-	      </tr>
+-	    </xsl:for-each>
+-	  </table>
+-	</xsl:when>
+-	<!-- NEW TABLE -->
+-	<xsl:otherwise>
+-	  <table cellspacing="0" cellpadding="0" align="center">
+-            <xsl:if test="@summary or processing-instruction('table-summary')">
+-              <xsl:attribute name="summary">
+-                <xsl:choose>
+-                  <xsl:when test="@summary">
+-                    <xsl:value-of select="@summary"/>
+-                  </xsl:when>
+-                  <xsl:otherwise>
+-                    <xsl:value-of select="processing-instruction('table-summary')"/>
+-                  </xsl:otherwise>
+-                </xsl:choose>
+-              </xsl:attribute>
+-            </xsl:if>
+-	    <xsl:attribute name="style">
+-	      <!-- The "solid" style is used because browsers need this to render any border at all (can be overridden in a CSS file 
+-	      with !important marker).  Where the border is turned off with a "border-width: 0 !important;", the !important marker is 
+-	      used to prevent a CSS file from overriding that zero width when a general width is given to table elements in a CSS file 
+-	      (which must also use the !important marker to override the non-!important elements encoded inline).  -->
+-	      <xsl:text>border: 1px solid; </xsl:text>
+-	      <xsl:if test="@pgwide!='0' or @orient='land'">
+-		width: 100%; 
+-	      </xsl:if>
+-      	      <xsl:if test="@frame">
+-		<xsl:choose>
+-		  <xsl:when test="@frame='none'">
+-		    border-width: 0 !important;
+-		  </xsl:when>
+-		  <xsl:when test="@frame='sides'">
+-		    border-top-width: 0 !important; border-bottom-width: 0 !important;
+-		  </xsl:when>
+-		  <xsl:when test="@frame='top'">
+-		    border-left-width: 0 !important; border-right-width: 0 !important; border-bottom-width: 0 !important;
+-		  </xsl:when>
+-		  <xsl:when test="@frame='bottom'">
+-		    border-left-width: 0 !important; border-right-width: 0 !important; border-top-width: 0 !important;
+-		  </xsl:when>
+-		  <xsl:when test="@frame='topbot'">
+-		    border-left-width: 0 !important; border-right-width: 0 !important;
+-		  </xsl:when>
+-	        </xsl:choose>
+-	      </xsl:if>
+-	    </xsl:attribute>
+-            <xsl:if test="cnx:name[node()] or                            cnx:title[node()] or                            cnx:caption[node()] or                            cnx:label[node()] or                            (not(cnx:label[not(node())]) and                             not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure]))">
+-              <caption align="bottom" class="table-text caption">
+-                <xsl:if test="cnx:label[node()] or                                (not(cnx:label[not(node())]) and                                 not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure]))">
+-                  <span class="cnx_label">
++	  <table>
++		<xsl:attribute name="ep:role">
++			<xsl:choose>
++				<xsl:when test="@ep:style"><xsl:value-of select="concat('table-style-', @ep:style)"/></xsl:when>
++				<xsl:otherwise><xsl:text>table-style-plain</xsl:text></xsl:otherwise>
++			</xsl:choose>
++		</xsl:attribute>
++	    <xsl:apply-templates select="@ep:*|@pgwide"/>
++	    <xsl:if test="cnx:name[node()] or cnx:title[node()] or cnx:caption[node()] or cnx:label[node()] or (not(cnx:label[not(node())]) and not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure]) and not(@ep:role='about_module_table' or @ep:role='about_module_learning_objectives_table' or @ep:role='table_of_mark_tasks'))"> 
++	  	  <xsl:if test="not(contains(ancestor::cnx:document/@id, 'second_page'))">
++	  	    <caption ep:role="table-text">
++            		<xsl:if test="cnx:label[node()] or (not(cnx:label[not(node())]) and not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure]))">
++                	<span ep:role="label">
+                     <xsl:choose>
+                       <xsl:when test="cnx:label">
+                         <xsl:apply-templates select="cnx:label"/>
+                       </xsl:when>
+                       <xsl:otherwise>
+-                        <xsl:call-template name="gentext">
+-                          <xsl:with-param name="key">Table</xsl:with-param>
+-                          <xsl:with-param name="lang" select="/module/metadata/language"/>
+-                        </xsl:call-template>
++                      	<xsl:value-of select="$locales/locale[@key='Table']"/>
+                       </xsl:otherwise>
+                     </xsl:choose>
+                     <xsl:if test="not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure])">
+@@ -94,15 +46,16 @@
+                       <xsl:variable name="type" select="translate(@type,$upper,$lower)"/>
+                       <xsl:choose>
+                         <xsl:when test="@type and $type!='table'">
+-                          <xsl:number level="any" count="cnx:table[not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure])][translate(@type,$upper,$lower)=$type]"/>
++                          <xsl:number level="any" count="cnx:table[not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure]) and ancestor::cnx:document[@module-id=$module_id]][translate(@type,$upper,$lower)=$type]"/>
+                         </xsl:when>
+                         <xsl:otherwise>
+-                          <xsl:number level="any" count="cnx:table[not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure])][not(@type) or translate(@type,$upper,$lower)='table']"/>
++                          <xsl:number level="any" count="cnx:table[not(ancestor::*[1][self::cnx:figure or self::cnx:subfigure]) and ancestor::cnx:document[@module-id=$module_id]][not(@type) or translate(@type,$upper,$lower)='table']"/>
+                         </xsl:otherwise>
+                       </xsl:choose>
++                      <xsl:text>.</xsl:text>
+                     </xsl:if>
+                     <xsl:if test="cnx:name[node()] or cnx:title[node()] or cnx:caption[node()]">
+-                      <xsl:text>: </xsl:text>
++                      <xsl:text>&#160;</xsl:text>
+                     </xsl:if>
+                   </span>
+                 </xsl:if>
+@@ -115,7 +68,7 @@
+                     </xsl:choose>
+                   </xsl:variable>
+                   <xsl:element name="{$caption-element}">
+-                    <xsl:attribute name="class">table-caption</xsl:attribute>
++                  	<xsl:attribute name="ep:role">table-caption</xsl:attribute>
+                     <xsl:if test="cnx:caption/@id">
+                       <xsl:attribute name="id">
+                         <xsl:value-of select="cnx:caption/@id"/>
+@@ -125,14 +78,15 @@
+                   </xsl:element>
+                 </xsl:if>
+               </caption>
++	  	  </xsl:if>
+             </xsl:if>
+ 	    <xsl:choose>
+ 	      <xsl:when test="count(cnx:tgroup) &gt; 1">
+ 		<tbody>
+ 		  <xsl:for-each select="cnx:tgroup">
+ 		    <tr>
+-		      <td style="padding: 0 !important; border: 0 !important">
+-			<table cellspacing="0" cellpadding="0" width="100%" style="border: 0 !important; margin: 0 !important;">
++		      <td>
++			<table>
+ 	    		  <xsl:apply-templates select="self::cnx:tgroup"/>
+ 			</table>
+ 		      </td>
+@@ -145,11 +99,17 @@
+ 	      </xsl:otherwise>
+ 	    </xsl:choose>
+ 	  </table>
+-	</xsl:otherwise>
+-      </xsl:choose>
+     </div>  
+   </xsl:template>
+ 
++  <xsl:template match="@pgwide">
++    <xsl:attribute name="width">
++      <xsl:value-of select="concat(., '%')"/>
++    </xsl:attribute>
++  </xsl:template>
++
++  <xsl:template match="@ep:style"/>
++  
+   <xsl:template match="cnx:colspec|cnx:spanspec"/>
+ 
+   <xsl:template match="cnx:tgroup">    
+@@ -166,23 +126,14 @@
+   </xsl:template>
+ 
+   <xsl:template match="cnx:entrytbl">
+-    <td class="entrytbl">
++  	<td ep:role="entrytbl">
+       <xsl:call-template name="IdCheck"/>
+-      <xsl:attribute name="style">
+-	<xsl:text>height: 100%; padding: 0 !important; border-left: 0 !important; border-top: 0 !important; </xsl:text>
+-	<xsl:call-template name="style.param.determiner">
+-	  <xsl:with-param name="style.name">colsep</xsl:with-param>
+-	</xsl:call-template>
+-	<xsl:call-template name="style.param.determiner">
+-	  <xsl:with-param name="style.name">rowsep</xsl:with-param>
+-	</xsl:call-template>
+-      </xsl:attribute>
+       <xsl:if test="(@namest and @nameend) or @spanname">
+ 	<xsl:attribute name="colspan">
+ 	  <xsl:call-template name="calculate.colspan"/>
+ 	</xsl:attribute>
+       </xsl:if>
+-      <table cellspacing="0" cellpadding="0" width="100%" style="height: 100%; border: 0 !important; margin: 0 !important;">
++      <table>
+ 	<!-- Only bother to do this if there are colwidth attributes specified. -->
+ 	<xsl:if test="cnx:colspec/@colwidth or child::*/cnx:colspec/@colwidth">
+ 	  <colgroup>
+@@ -197,23 +148,6 @@
+   <xsl:template match="cnx:thead|cnx:tfoot|cnx:tbody">
+     <xsl:element name="{local-name(.)}">
+       <xsl:call-template name="IdCheck"/>
+-      <xsl:attribute name="valign">
+-	<xsl:choose>
+-	  <xsl:when test="@valign">
+-	    <xsl:value-of select="@valign"/>
+-	  </xsl:when>
+-	  <xsl:otherwise>
+-	    <xsl:choose>
+-	      <xsl:when test="self::cnx:tbody or self::cnx:tfoot">
+-		<xsl:text>top</xsl:text>
+-	      </xsl:when>
+-	      <xsl:when test="self::cnx:thead">
+-		<xsl:text>bottom</xsl:text>
+-	      </xsl:when>
+-	    </xsl:choose>
+-	  </xsl:otherwise>
+-	</xsl:choose>
+-      </xsl:attribute>
+       <xsl:apply-templates/>
+     </xsl:element>
+   </xsl:template>
+@@ -326,6 +260,7 @@
+     <xsl:param name="cellgi"/>
+ 
+     <xsl:element name="{$cellgi}">
++      <xsl:apply-templates select="@ep:*"></xsl:apply-templates>
+       <xsl:if test="@morerows">
+ 	<xsl:attribute name="rowspan">
+ 	  <xsl:value-of select="@morerows+1"/>
+@@ -342,57 +277,6 @@
+ 	</xsl:attribute>
+       </xsl:if>
+       <xsl:call-template name="IdCheck"/>
+-      <!-- Set colsep and rowsep attributes with CSS using the style attribute.  Turn off the borders on the left and top of any 
+-	   entry(tbl) because they are always ignored. -->
+-      <xsl:attribute name="style">
+-	<!-- Don't let .css files override these (hence the "!important") -->
+-	<xsl:text>border-left: 0 !important; border-top: 0 !important; </xsl:text>
+-	<!-- Give an entry a border on the right if its not in the last column of the tgroup or entrytbl, or according to any colsep 
+-	     attributes either in current entry or inherited from above. -->
+-	<xsl:choose>
+-	  <xsl:when test="not(following-sibling::*) or ancestor-or-self::*/@colsep='0' or ancestor::*/cnx:colspec/@colsep='0' or ancestor::*[3]/cnx:spanspec/@colsep='0'">
+-	    <xsl:call-template name="style.param.determiner">
+-	      <xsl:with-param name="style.name" select="'colsep'"/>
+-	    </xsl:call-template>
+-	  </xsl:when>
+-	  <xsl:otherwise>
+-	    <xsl:call-template name="style.maker">
+-	      <xsl:with-param name="style.name" select="'colsep'"/>
+-	      <xsl:with-param name="style.param" select="'1'"/>
+-	    </xsl:call-template>
+-	  </xsl:otherwise>
+-	</xsl:choose>
+-	<!-- Give an entry a border on the bottom if its not in the very last row, or according to any rowsep attributes in current 
+-	     entry or inherited from above. -->
+-	<xsl:choose>
+-	  <xsl:when test="not(parent::cnx:row/following-sibling::cnx:row) or ancestor-or-self::*/@rowsep='0' or ancestor::*/cnx:colspec/@rowsep='0' or ancestor::*[3]/cnx:spanspec/@rowsep='0' or @morerows">
+-	    <xsl:call-template name="style.param.determiner">
+-	      <xsl:with-param name="style.name" select="'rowsep'"/>
+-	    </xsl:call-template>
+-	  </xsl:when>
+-	  <xsl:otherwise>
+-	    <xsl:call-template name="style.maker">
+-	      <xsl:with-param name="style.name" select="'rowsep'"/>
+-	      <xsl:with-param name="style.param" select="'1'"/>
+-	    </xsl:call-template>
+-	  </xsl:otherwise>
+-	</xsl:choose>
+-	<!-- Give the cell alignment to the left unless otherwise declared or unless the cell is affected by a spanspec (whose default 
+-	     alignment is to the center). -->
+-	<xsl:choose>
+-	  <xsl:when test="ancestor-or-self::*/@align!='left' or ancestor::*/cnx:colspec/@align!='left' or @spanname">
+-	    <xsl:call-template name="style.param.determiner">
+-	      <xsl:with-param name="style.name" select="'align'"/>
+-            </xsl:call-template>
+-	  </xsl:when>
+-	  <xsl:otherwise>
+-	    <xsl:call-template name="style.maker">
+-	     <xsl:with-param name="style.name" select="'align'"/>
+-	      <xsl:with-param name="style.param" select="'left'"/>
+-	    </xsl:call-template>
+-	  </xsl:otherwise>
+-	</xsl:choose>
+-      </xsl:attribute>
+       <!-- Add any possible char and charoff attributes -->
+       <xsl:if test="ancestor-or-self::*/@char or ancestor::*/cnx:colspec/@char or ancestor::*[3]/cnx:spanspec/@char">
+ 	<xsl:call-template name="style.param.determiner">
+@@ -407,7 +291,7 @@
+ 
+       <xsl:choose>
+ 	<xsl:when test="count(node()) = 0">
+-	  <xsl:text> </xsl:text>
++	  <xsl:text> </xsl:text>
+ 	</xsl:when>
+ 	<xsl:otherwise>
+ 	  <xsl:apply-templates/>
+@@ -717,11 +601,17 @@
+   <xsl:template name="morerows.check">
+     <xsl:param name="mc.entry"/> <!-- all passed params must be declared, even if they don't need a default -->
+     <xsl:param name="mc.first.part" select="';'"/> <!-- Used primarily for mc.cols.assignment below -->
+-    <xsl:param name="mc.row.number.being.checked" select="'1'"/> <!-- Number of row we're in during testing (start at top) -->
+-    <xsl:param name="mc.entry.number.being.checked" select="'1'"/> <!-- Number of column we're in during testing (start at left) -->
++    <xsl:param name="mc.row.number.being.checked" select="1"/> <!-- Number of row we're in during testing (start at top) -->
++    <xsl:param name="mc.entry.number.being.checked" select="1"/> <!-- Number of column we're in during testing (start at left) -->
+     <xsl:param name="mc.cols.quantity" select="$mc.entry/ancestor::*[3]/@cols"/>
+     <xsl:param name="mc.cols"> <!-- A semi-colon separated string that shows us how many rows are being occupied by a particular 
+ 				     row's entries.  Start of by making it look something like this: ;0;0;0;0;...;0; -->
++      <xsl:if test="empty($mc.cols.quantity)">
++        <xsl:message terminate="yes">
++          <xsl:text>[XSLT_ERR] Missing required attribute 'cols' in node table/tgroup. </xsl:text>
++        </xsl:message>
++      </xsl:if>
++      
+       <xsl:call-template name="mc.cols.initialization">
+ 	<xsl:with-param name="mc.cols.quantity" select="$mc.cols.quantity"/>
+ 	<xsl:with-param name="mc.cols" select="';'"/>
+@@ -730,7 +620,7 @@
+     <!-- Start at the top left (because we have to start accounting for @morerows beginning there) until we make it down to the row 
+ 	 with the entry(tbl) whose colnum we're trying to determine. -->
+     <xsl:choose>
+-      <xsl:when test="generate-id($mc.entry/ancestor::*[2]/cnx:row[position()=$mc.row.number.being.checked]/child::*[position()=$mc.entry.number.being.checked])                 = generate-id($mc.entry)">
++      <xsl:when test="generate-id($mc.entry/ancestor::*[2]/cnx:row[position()=number($mc.row.number.being.checked)]/child::*[position()=number($mc.entry.number.being.checked)]) = generate-id($mc.entry)">
+ 	<xsl:call-template name="mc.determine.colnum">
+ 	  <xsl:with-param name="mc.cols" select="$mc.cols"/>
+ 	  <xsl:with-param name="mc.cols.quantity" select="$mc.cols.quantity"/>
+@@ -751,7 +641,7 @@
+ 
+   <xsl:template name="mc.cols.initialization">
+     <!-- Say, for example, the tgroup has @cols equal to 4.  $mc.cols will look like this: ;0;0;0;0; -->
+-    <xsl:param name="mci.iteration" select="'1'"/>
++    <xsl:param name="mci.iteration" select="1"/>
+     <xsl:param name="mc.cols"/>
+     <xsl:param name="mc.cols.quantity"/>
+     <xsl:choose>
+@@ -797,7 +687,7 @@
+     <xsl:param name="mc.entry"/>
+     <xsl:param name="mc.entry.number.being.checked"/>
+     <xsl:param name="mc.row.number.being.checked"/>
+-    <xsl:param name="mca.entry.being.checked" select="$mc.entry/ancestor::*[2]/cnx:row[position()=$mc.row.number.being.checked]/child::*[position()=$mc.entry.number.being.checked]"/>
++    <xsl:param name="mca.entry.being.checked" select="$mc.entry/ancestor::*[2]/cnx:row[position()=number($mc.row.number.being.checked)]/child::*[position()=number($mc.entry.number.being.checked)]"/>
+     <xsl:param name="mca.rowspan">
+       <xsl:choose>
+       <!-- If there's a morerows attribute, the entry(tbl) spans the number of that attribute plus 1. -->
+@@ -835,7 +725,7 @@
+     <xsl:choose>
+       <!-- If the column has a marker that's higher than 0, something is already sitting there (either a previous entry in the same 
+ 	   row or a morerows in the entry of a previous row. -->
+-      <xsl:when test="$mca.number.in.question != 0">
++      <xsl:when test="string($mca.number.in.question)!='NaN' and $mca.number.in.question != '' and $mca.number.in.question != 0">
+ 	<xsl:call-template name="mc.cols.assignment">
+ 	  <xsl:with-param name="mc.row.number.being.checked" select="$mc.row.number.being.checked"/>
+ 	  <xsl:with-param name="mc.entry.number.being.checked" select="$mc.entry.number.being.checked"/>
+@@ -865,10 +755,10 @@
+ 	  <xsl:otherwise>
+ 	    <xsl:choose>
+ 	      <!-- If not at new row (there's a following-sibling entry(tbl)) -->
+-	      <xsl:when test="boolean($mc.entry/ancestor::*[2]/cnx:row[position()=$mc.row.number.being.checked]/child::*[position()=$mc.entry.number.being.checked][following-sibling::*])">
++	      <xsl:when test="boolean($mc.entry/ancestor::*[2]/cnx:row[position()=number($mc.row.number.being.checked)]/child::*[position()=number($mc.entry.number.being.checked)][following-sibling::*])">
+ 		<xsl:call-template name="morerows.check">
+ 		  <xsl:with-param name="mc.row.number.being.checked" select="$mc.row.number.being.checked"/>
+-		  <xsl:with-param name="mc.entry.number.being.checked" select="$mc.entry.number.being.checked + 1"/>
++		  <xsl:with-param name="mc.entry.number.being.checked" select="number($mc.entry.number.being.checked) + 1"/>
+ 		  <xsl:with-param name="mc.entry" select="$mc.entry"/>
+ 		  <xsl:with-param name="mc.cols.quantity" select="$mc.cols.quantity.test"/>
+ 		  <xsl:with-param name="mc.cols" select="concat($mc.first.part,$mca.rowspan,$mca.last.part)"/>
+@@ -894,10 +784,10 @@
+ 
+   <xsl:template name="mc.cols.reset">
+     <xsl:param name="mc.cols"/>
+-    <xsl:param name="mcr.iteration" select="'1'"/>
++    <xsl:param name="mcr.iteration" select="1"/>
+     <xsl:param name="mcr.first.part" select="';'"/>
+-    <xsl:param name="mcr.number.in.question" select="substring-before(substring-after($mc.cols,$mcr.first.part),';')"/>
+-    <xsl:param name="mcr.last.part" select="substring-after($mc.cols,concat($mcr.first.part,$mcr.number.in.question))"/>
++    <xsl:param name="mcr.number.in.question" select="number(substring-before(substring-after($mc.cols,$mcr.first.part),';'))"/>
++    <xsl:param name="mcr.last.part" select="number(substring-after($mc.cols,concat($mcr.first.part,$mcr.number.in.question)))"/>
+     <xsl:param name="mc.row.number.being.checked"/>
+     <xsl:param name="mc.entry.number.being.checked"/>
+     <xsl:param name="mc.entry"/>
+@@ -947,8 +837,8 @@
+   <xsl:template name="mc.determine.colnum">
+     <xsl:param name="mc.cols"/>
+     <xsl:param name="mc.first.part" select="';'"/>
+-    <xsl:param name="mdc.iteration" select="'1'"/>
+-    <xsl:param name="mdc.number.in.question" select="substring-before(substring-after($mc.cols,$mc.first.part),';')"/>
++    <xsl:param name="mdc.iteration" select="1"/>
++    <xsl:param name="mdc.number.in.question" select="number(substring-before(substring-after($mc.cols,$mc.first.part),';'))"/>
+     <xsl:param name="mc.cols.quantity"/>
+     <xsl:choose>
+       <xsl:when test="($mdc.number.in.question = 0) or ($mdc.iteration &gt; $mc.cols.quantity)">
+@@ -986,7 +876,7 @@
+ 
+ 
+   <xsl:template name="col.maker">
+-    <xsl:param name="cm.iteration" select="'1'"/>
++    <xsl:param name="cm.iteration" select="1"/>
+       <!-- If thead or tfoot has a colspec with a colwidth attribute, it takes precedence ??? over a colwidth directly under a 
+ 	   tgroup or entrytbl.  Set this colwidth attribute as a param. -->
+       <xsl:param name="colwidth">
+@@ -1010,27 +900,13 @@
+ 		   attribute instead of a width attribute, since browsers can actually handle this. -->
+ 	      <xsl:choose>
+ 		<xsl:when test="contains($colwidth,'in') or      contains($colwidth,'em') or      contains($colwidth,'cm') or      contains($colwidth,'pc') or      contains($colwidth,'pi') or      contains($colwidth,'mm') or      contains($colwidth,'ex')">
+-		  <xsl:attribute name="style">
+-		    <xsl:text>width: </xsl:text>
+-		    <!-- If 'pi' is used for 'picas' (as given in an example in the CALS spec) instead of 'pc' (as can be rendered by 
+-			 browsers), change it to 'pc'. -->
+-		    <xsl:choose>
+-		      <xsl:when test="contains($colwidth,'pi')">
+-			<xsl:value-of select="substring-before($colwidth,'pi')"/>
+-			<xsl:text>pc</xsl:text>
+-		      </xsl:when>
+-		      <xsl:otherwise>
+-			<xsl:value-of select="$colwidth"/>
+-		      </xsl:otherwise>
+-		    </xsl:choose>
+-		  </xsl:attribute>
+ 		</xsl:when>
+ 		<!-- Otherwise, such as when the width is expressed in '%' (percentages), 'pt', 'px', '*' (relative widths) or just a 
+ 		     number, use the width attribute, which browsers can render just as well in those cases (if not better, as in the 
+ 		     case of relative widths). -->
+ 		<xsl:otherwise>
+ 		  <xsl:attribute name="width">
+-		    <xsl:value-of select="$colwidth"/>
++		    <xsl:value-of select="concat($colwidth, '%')"/>
+ 		  </xsl:attribute>
+ 		</xsl:otherwise>
+ 	      </xsl:choose>

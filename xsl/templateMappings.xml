@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateMappings version="11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<moduleTypesSet>
+		<name>J. polski - Szkoła podstawowa</name>
+		<typesSetCode>JPOL3</typesSetCode>
+		<subjectCode>JPOL3</subjectCode>
+		<module>
+			<type>Moduł literacki</type>
+			<tiled>
+				<templateRef>siatka_3komorki_kolumna</templateRef>
+				<section>
+					<role>Ćwiczenia wprowadzające</role>
+					<tileRef>lewy_gora</tileRef>
+				</section>
+				<section>
+					<role>Ćwiczenia do tekstu</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Zadania testowe (czytanie ze zrozumieniem)</role>
+					<tileRef>lewy_srodek</tileRef>
+				</section>
+				<section>
+					<role>Tekst źródłowy</role>
+					<tileRef>prawy</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Moduł językowy</type>
+			<tiled>
+				<templateRef>siatka_kolumnaSzeroka_kolumnaWaska</templateRef>
+				<section>
+					<role>Tekst źródłowy</role>
+					<tileRef>prawy</tileRef>
+				</section>
+				<section>
+					<role>Ćwiczenia do tekstu</role>
+					<tileRef>lewy</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Moduł plastyczny</type>
+			<tiled>
+				<templateRef>siatka_kolumna_2komorki</templateRef>
+				<section>
+					<role>Ćwiczenia wprowadzające</role>
+					<tileRef>prawy_gora</tileRef>
+				</section>
+				<section>
+					<role>Obraz źródłowy</role>
+					<tileRef>lewy</tileRef>
+				</section>
+				<section>
+					<role>Ćwiczenia do obrazu</role>
+					<tileRef>prawy_dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Moduł leksykalno-frazeologiczny</type>
+			<unmapped>
+				<section>
+					<role>Zestaw ćwiczeń i zadań</role>
+				</section>
+			</unmapped>
+		</module>
+		<module>
+			<type>Moduł testowy</type>
+			<tiled>
+				<templateRef>siatka_2kolumny</templateRef>
+				<section>
+					<role>Tekst źródłowy</role>
+					<tileRef>lewy</tileRef>
+				</section>
+				<section>
+					<role>Zadania do czytania ze zrozumieniem</role>
+					<tileRef>prawy</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Moduł podsumowujący</type>
+			<unmapped>
+				<section>
+					<role>Zestaw zadań podsumowujących</role>
+				</section>
+			</unmapped>
+		</module>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>J. polski - Gimnazjum i Liceum</name>
+		<typesSetCode>JPOL4_5</typesSetCode>
+		<subjectCode>JPOL4</subjectCode>
+		<subjectCode>JPOL5</subjectCode>
+		<module>
+			<type>Wstęp do lekcji</type>
+			<tiled>
+				<templateRef>siatka_wiersz_2komorki</templateRef>
+				<section>
+					<role>Intro</role>
+					<tileRef>gora</tileRef>
+				</section>
+				<section>
+					<role>Teksty kultury – przed lekcją</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Język – przed lekcją</role>
+					<tileRef>prawy_dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Teksty kultury</type>
+		</module>
+		<module>
+			<type>Problemy</type>
+			<tiled>
+				<templateRef>siatka_wiersz_2komorki</templateRef>
+				<section>
+					<role>Dyskusja</role>
+					<tileRef>gora</tileRef>
+				</section>
+				<section>
+					<role>Prace pisemne</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Działania twórcze</role>
+					<tileRef>prawy_dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Konteksty</type>
+			<tiled>
+				<templateRef>siatka_4komorki</templateRef>
+				<section>
+					<role>Kontekst 1</role>
+					<tileRef>lewy_gora</tileRef>
+				</section>
+				<section>
+					<role>Kontekst 2</role>
+					<tileRef>prawy_gora</tileRef>
+				</section>
+				<section>
+					<role>Kontekst 3</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Kontekst 4</role>
+					<tileRef>prawy_dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Preteksty</type>
+			<tiled>
+				<templateRef>siatka_4komorki</templateRef>
+				<section>
+					<role>Pretekst 1</role>
+					<tileRef>lewy_gora</tileRef>
+				</section>
+				<section>
+					<role>Pretekst 2</role>
+					<tileRef>prawy_gora</tileRef>
+				</section>
+				<section>
+					<role>Pretekst 3</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Pretekst 4</role>
+					<tileRef>prawy_dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Komunikacja i życie</type>
+			<tiled>
+				<templateRef>siatka_wiersz_2komorki</templateRef>
+				<section>
+					<role>Intro</role>
+					<tileRef>gora</tileRef>
+				</section>
+				<section>
+					<role>Miniwykład</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Zadania</role>
+					<tileRef>prawy_dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Gramatyka</type>
+			<tiled>
+				<templateRef>siatka_wiersz_2komorki</templateRef>
+				<section>
+					<role>Intro</role>
+					<tileRef>gora</tileRef>
+				</section>
+				<section>
+					<role>Miniwykład</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Zadania</role>
+					<tileRef>prawy_dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Podsumowanie_GIM</type>
+			<tiled>
+				<templateRef>siatka_2kolumny</templateRef>
+				<section>
+					<role>Teksty kultury</role>
+					<tileRef>lewy</tileRef>
+				</section>
+				<section>
+					<role>Język</role>
+					<tileRef>prawy</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Podsumowanie_LO</type>
+			<tiled>
+				<templateRef>siatka_kolumna_2komorki</templateRef>
+				<section>
+					<role>Słowa kluczowe</role>
+					<tileRef>lewy</tileRef>
+				</section>
+				<section>
+					<role>Do zrobienia</role>
+					<tileRef>prawy_gora</tileRef>
+				</section>
+				<section>
+					<role>Mapa epoki</role>
+					<tileRef>prawy_dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Sprawdzenie wiadomości</type>
+			<tiled>
+				<templateRef>siatka_2komorki_kolumna</templateRef>
+				<section>
+					<role>Teksty kultury: test</role>
+					<tileRef>lewy_gora</tileRef>
+				</section>
+				<section>
+					<role>Język: test</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Egzamin próbny</role>
+					<tileRef>prawy</tileRef>
+				</section>
+			</tiled>
+		</module>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>J. polski - Gimnazjum i Liceum</name>
+		<typesSetCode>JPOL_E3_E4</typesSetCode>
+		<subjectCode>JPOL_E3</subjectCode>
+		<subjectCode>JPOL_E4</subjectCode>
+		<module>
+			<type></type>
+			<unmapped>
+				<section>
+					<role>Konteksty</role>
+				</section>
+				<section>
+					<role>Preteksty</role>
+				</section>
+				<section>
+					<role>Teksty kultury</role>
+				</section>
+				<section>
+					<role>Gramatyka</role>
+				</section>
+				<section>
+					<role>Komunikacja i życie</role>
+				</section>
+				<section>
+					<role>Zadaniowo</role>
+				</section>
+				<section>
+					<role>Dodatkowy opis zasobów</role>
+				</section>
+			</unmapped>
+		</module>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>Historia - Szkoła podstawowa</name>
+		<typesSetCode>HIST3</typesSetCode>
+		<subjectCode>HIST3</subjectCode>
+		<module>
+			<type>Zaproszenie</type>
+			<tiled>
+				<templateRef>siatka_wierszSzeroki_wierszWaski</templateRef>
+				<section>
+					<role>Wprowadzenie [tekst + WOMI]</role>
+					<tileRef>gora</tileRef>
+				</section>
+				<section>
+					<role>Zadanie na rozgrzewkę</role>
+					<tileRef>dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>A to ci historia!</type>
+			<unmapped>
+				<section/>
+			</unmapped>
+		</module>
+		<module>
+			<type>Podsumowanie</type>
+			<tiled>
+				<templateRef>siatka_2komorki_wiersz</templateRef>
+				<section>
+					<role>Co wiem</role>
+					<tileRef>lewy_gora</tileRef>
+				</section>
+				<section>
+					<role>Co potrafię</role>
+					<tileRef>prawy_gora</tileRef>
+				</section>
+				<section>
+					<role>Zastanów się...</role>
+					<tileRef>dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Kapsuła czasu</type>
+			<unmapped>
+				<section/>
+			</unmapped>
+		</module>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>Historia - Gimnazjum i Liceum</name>
+		<typesSetCode>HIST4_5</typesSetCode>
+		<subjectCode>HIST4</subjectCode>
+		<subjectCode>HIST5</subjectCode>
+		<module>
+			<type>Wprowadzenie</type>
+			<tiled>
+				<templateRef>siatka_wierszSzeroki_wierszWaski</templateRef>
+				<section>
+					<role>WOMI-wykład wprowadzający</role>
+					<tileRef>gora</tileRef>
+				</section>
+				<section>
+					<role>Ćwiczenie</role>
+					<tileRef>dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Twoje historie</type>
+			<unmapped>
+				<section/>
+			</unmapped>
+		</module>
+		<module>
+			<type>Zamiast podsumowania</type>
+			<tiled>
+				<templateRef>siatka_2komorki_wiersz</templateRef>
+				<section>
+					<role>Ćwiczenie</role>
+					<tileRef>lewy_gora</tileRef>
+				</section>
+				<section>
+					<role>Jak myślisz...</role>
+					<tileRef>prawy_gora</tileRef>
+				</section>
+				<section>
+					<role>A gdyby tak...</role>
+					<tileRef>dol</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Kapsuła czasu</type>
+			<unmapped>
+				<section/>
+			</unmapped>
+		</module>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>Matematyka</name>
+		<typesSetCode>MAT</typesSetCode>
+		<subjectCode>MAT3</subjectCode>
+		<subjectCode>MAT4</subjectCode>
+		<subjectCode>MAT5</subjectCode>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>Wiedza o społeczeństwie</name>
+		<typesSetCode>WOS</typesSetCode>
+		<subjectCode>WOS4</subjectCode>
+		<subjectCode>WOS5</subjectCode>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>Informatyka</name>
+		<typesSetCode>INF</typesSetCode>
+		<subjectCode>INF4</subjectCode>
+		<subjectCode>INF5</subjectCode>
+		<module>
+			<type>Podstawowy</type>
+			<tiled>
+				<templateRef>siatka_duza_szeroka_3komorki</templateRef>
+				<section>
+					<role>Treść</role>
+					<tileRef>lewy</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="tresc"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>Wprowadzenie</role>
+					<tileRef>prawy_gora</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="wstep"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>Zadania</role>
+					<tileRef>prawy_srodek</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="cwiczenia"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>Słownik</role>
+					<tileRef>prawy_dol</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="slownik"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Wprowadzenie</type>
+			<skipNumbering>true</skipNumbering>
+		</module>
+		<module>
+			<type>Treść</type>
+		</module>
+		<module>
+			<type>Zadania</type>
+			<skipNumbering>true</skipNumbering>
+		</module>
+		<module>
+			<type>Słowniczek</type>
+			<skipNumbering>true</skipNumbering>
+		</module>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>Uniwersytet Przyrodniczy</name>
+		<typesSetCode>UP</typesSetCode>
+		<subjectCode>BEZP4</subjectCode>
+		<subjectCode>BEZP5</subjectCode>
+		<subjectCode>BIOL4</subjectCode>
+		<subjectCode>BIOL5</subjectCode>
+		<subjectCode>CHEM4</subjectCode>
+		<subjectCode>CHEM5</subjectCode>
+		<subjectCode>FIZ4</subjectCode>
+		<subjectCode>FIZ5</subjectCode>
+		<subjectCode>GEO4</subjectCode>
+		<subjectCode>GEO5</subjectCode>
+		<subjectCode>PRZYR3</subjectCode>
+		<module>
+			<type>Moduł UP1</type>
+			<tiled>
+				<templateRef>siatka_duza_szeroka_3komorki</templateRef>
+				<section>
+					<role>Treść główna</role>
+					<tileRef>lewy</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="tresc"/>
+						<parameter name="data-skin-type" value="tytul_lead"/>
+					</parameters>
+				</section>
+				<section>
+					<role>Zadania</role>
+					<tileRef>prawy_gora</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="cwiczenia"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>Słowniczek</role>
+					<tileRef>prawy_srodek</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="slownik"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>Podsumowanie</role>
+					<tileRef>prawy_dol</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="podsumowanie"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Moduł UP2</type>
+			<tiled>
+				<templateRef>siatka_duza_szeroka_2komorki</templateRef>
+				<section>
+					<role>Treść główna</role>
+					<tileRef>lewy</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="tresc"/>
+						<parameter name="data-skin-type" value="tytul_lead"/>
+					</parameters>
+				</section>
+				<section>
+					<role>Słowniczek</role>
+					<tileRef>prawy_gora</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="slownik"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>Podsumowanie</role>
+					<tileRef>prawy_dol</tileRef>
+					<parameters>
+						<parameter name="data-skin-role" value="podsumowanie"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+			</tiled>
+		</module>
+	</moduleTypesSet>
+	<moduleTypesSet>
+		<name>PCSS - testy</name>
+		<typesSetCode>EPO</typesSetCode>
+		<subjectCode>EPO1</subjectCode>
+		<module>
+			<type>Dokumentacja</type>
+			<tiled>
+				<templateRef>siatka_2komorki_kolumna</templateRef>
+				<section>
+					<role>Streszczenie</role>
+					<tileRef>lewy_gora</tileRef>
+				</section>
+				<section>
+					<role>Historia zmian</role>
+					<tileRef>lewy_dol</tileRef>
+				</section>
+				<section>
+					<role>Treść główna</role>
+					<tileRef>prawy</tileRef>
+				</section>
+			</tiled>
+		</module>
+		<module>
+			<type>Testy kafli</type>
+			<unmapped>
+				<section>
+					<role>wstep_i_tytul</role>
+					<parameters>
+						<parameter name="data-skin-role" value="wstep"/>
+						<parameter name="data-skin-type" value="tytul"/>
+					</parameters>
+				</section>
+				<section>
+					<role>wstep_i_tytul_ikona</role>
+					<parameters>
+						<parameter name="data-skin-role" value="wstep"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>wstep_i_tytul_lead</role>
+					<parameters>
+						<parameter name="data-skin-role" value="wstep"/>
+						<parameter name="data-skin-type" value="tytul_lead"/>
+					</parameters>
+				</section>
+				<section>
+					<role>wstep_i_tytul_galeria</role>
+					<parameters>
+						<parameter name="data-skin-role" value="wstep"/>
+						<parameter name="data-skin-type" value="tytul_galeria"/>
+					</parameters>
+				</section>
+				<section>
+					<role>cwiczenia_i_tytul</role>
+					<parameters>
+						<parameter name="data-skin-role" value="cwiczenia"/>
+						<parameter name="data-skin-type" value="tytul"/>
+					</parameters>
+				</section>
+				<section>
+					<role>cwiczenia_i_tytul_ikona</role>
+					<parameters>
+						<parameter name="data-skin-role" value="cwiczenia"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>cwiczenia_i_tytul_lead</role>
+					<parameters>
+						<parameter name="data-skin-role" value="cwiczenia"/>
+						<parameter name="data-skin-type" value="tytul_lead"/>
+					</parameters>
+				</section>
+				<section>
+					<role>cwiczenia_i_tytul_galeria</role>
+					<parameters>
+						<parameter name="data-skin-role" value="cwiczenia"/>
+						<parameter name="data-skin-type" value="tytul_galeria"/>
+					</parameters>
+				</section>
+				<section>
+					<role>slownik_i_tytul</role>
+					<parameters>
+						<parameter name="data-skin-role" value="slownik"/>
+						<parameter name="data-skin-type" value="tytul"/>
+					</parameters>
+				</section>
+				<section>
+					<role>slownik_i_tytul_ikona</role>
+					<parameters>
+						<parameter name="data-skin-role" value="slownik"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>slownik_i_tytul_lead</role>
+					<parameters>
+						<parameter name="data-skin-role" value="slownik"/>
+						<parameter name="data-skin-type" value="tytul_lead"/>
+					</parameters>
+				</section>
+				<section>
+					<role>slownik_i_tytul_galeria</role>
+					<parameters>
+						<parameter name="data-skin-role" value="slownik"/>
+						<parameter name="data-skin-type" value="tytul_galeria"/>
+					</parameters>
+				</section>
+				<section>
+					<role>tresc_i_tytul</role>
+					<parameters>
+						<parameter name="data-skin-role" value="tresc"/>
+						<parameter name="data-skin-type" value="tytul"/>
+					</parameters>
+				</section>
+				<section>
+					<role>tresc_i_tytul_ikona</role>
+					<parameters>
+						<parameter name="data-skin-role" value="tresc"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>tresc_i_tytul_lead</role>
+					<parameters>
+						<parameter name="data-skin-role" value="tresc"/>
+						<parameter name="data-skin-type" value="tytul_lead"/>
+					</parameters>
+				</section>
+				<section>
+					<role>tresc_i_tytul_galeria</role>
+					<parameters>
+						<parameter name="data-skin-role" value="tresc"/>
+						<parameter name="data-skin-type" value="tytul_galeria"/>
+					</parameters>
+				</section>
+				<section>
+					<role>podsumowanie_i_tytul</role>
+					<parameters>
+						<parameter name="data-skin-role" value="podsumowanie"/>
+						<parameter name="data-skin-type" value="tytul"/>
+					</parameters>
+				</section>
+				<section>
+					<role>podsumowanie_i_tytul_ikona</role>
+					<parameters>
+						<parameter name="data-skin-role" value="podsumowanie"/>
+						<parameter name="data-skin-type" value="tytul_ikona"/>
+					</parameters>
+				</section>
+				<section>
+					<role>podsumowanie_i_tytul_lead</role>
+					<parameters>
+						<parameter name="data-skin-role" value="podsumowanie"/>
+						<parameter name="data-skin-type" value="tytul_lead"/>
+					</parameters>
+				</section>
+				<section>
+					<role>podsumowanie_i_tytul_galeria</role>
+					<parameters>
+						<parameter name="data-skin-role" value="podsumowanie"/>
+						<parameter name="data-skin-type" value="tytul_galeria"/>
+					</parameters>
+				</section>
+			</unmapped>
+		</module>
+	</moduleTypesSet>
+	<template>
+		<name>KAFLOWY - wiersz + 2 komórki</name>
+		<key>siatka_wiersz_2komorki</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Góra</name>
+			<key>gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>3</height>
+			<width>8</width>
+		</tile>
+		<tile>
+			<name>Lewy dół</name>
+			<key>lewy_dol</key>
+			<top>4</top>
+			<left>1</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy dół</name>
+			<key>prawy_dol</key>
+			<top>4</top>
+			<left>5</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - wiersz + 3 komórki</name>
+		<key>siatka_wiersz_3komorki</key>
+		<gridWidth>9</gridWidth>
+		<gridHeight>7</gridHeight>
+		<tile>
+			<name>Góra</name>
+			<key>gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>4</height>
+			<width>9</width>
+		</tile>
+		<tile>
+			<name>Lewy dół</name>
+			<key>lewy_dol</key>
+			<top>5</top>
+			<left>1</left>
+			<height>3</height>
+			<width>3</width>
+		</tile>
+		<tile>
+			<name>Środek dół</name>
+			<key>srodek_dol</key>
+			<top>5</top>
+			<left>4</left>
+			<height>3</height>
+			<width>3</width>
+		</tile>
+		<tile>
+			<name>Prawy dół</name>
+			<key>prawy_dol</key>
+			<top>5</top>
+			<left>7</left>
+			<height>3</height>
+			<width>3</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - duży wiersz + 2 komórki</name>
+		<key>siatka_duzy_wiersz_2komorki</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Góra</name>
+			<key>gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>4</height>
+			<width>8</width>
+		</tile>
+		<tile>
+			<name>Lewy dół</name>
+			<key>lewy_dol</key>
+			<top>5</top>
+			<left>1</left>
+			<height>2</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy dół</name>
+			<key>prawy_dol</key>
+			<top>5</top>
+			<left>5</left>
+			<height>2</height>
+			<width>4</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 2 komórki + wiersz</name>
+		<key>siatka_2komorki_wiersz</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Lewy Góra</name>
+			<key>lewy_gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy Góra</name>
+			<key>prawy_gora</key>
+			<top>1</top>
+			<left>5</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Dół</name>
+			<key>dol</key>
+			<top>4</top>
+			<left>1</left>
+			<height>3</height>
+			<width>8</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 2 komórki + kolumna</name>
+		<key>siatka_2komorki_kolumna</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Lewy góra</name>
+			<key>lewy_gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy</name>
+			<key>prawy</key>
+			<top>1</top>
+			<left>5</left>
+			<height>6</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Lewy dół</name>
+			<key>lewy_dol</key>
+			<top>4</top>
+			<left>1</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 3 komórki + kolumna</name>
+		<key>siatka_3komorki_kolumna</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Lewy góra</name>
+			<key>lewy_gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>2</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Lewy środek</name>
+			<key>lewy_srodek</key>
+			<top>3</top>
+			<left>1</left>
+			<height>2</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Lewy dół</name>
+			<key>lewy_dol</key>
+			<top>5</top>
+			<left>1</left>
+			<height>2</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy</name>
+			<key>prawy</key>
+			<top>1</top>
+			<left>5</left>
+			<height>6</height>
+			<width>4</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 4 komórki</name>
+		<key>siatka_4komorki</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Lewy góra</name>
+			<key>lewy_gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy góra</name>
+			<key>prawy_gora</key>
+			<top>1</top>
+			<left>5</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Lewy dół</name>
+			<key>lewy_dol</key>
+			<top>4</top>
+			<left>1</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy dół</name>
+			<key>prawy_dol</key>
+			<top>4</top>
+			<left>5</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - kolumna + 2 komórki</name>
+		<key>siatka_kolumna_2komorki</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Lewy</name>
+			<key>lewy</key>
+			<top>1</top>
+			<left>1</left>
+			<height>6</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy góra</name>
+			<key>prawy_gora</key>
+			<top>1</top>
+			<left>5</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy dół</name>
+			<key>prawy_dol</key>
+			<top>4</top>
+			<left>5</left>
+			<height>3</height>
+			<width>4</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 2 kolumny równe</name>
+		<key>siatka_2kolumny</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Lewy</name>
+			<key>lewy</key>
+			<top>1</top>
+			<left>1</left>
+			<height>6</height>
+			<width>4</width>
+		</tile>
+		<tile>
+			<name>Prawy</name>
+			<key>prawy</key>
+			<top>1</top>
+			<left>5</left>
+			<height>6</height>
+			<width>4</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 2 kolumny: szeroka + wąska</name>
+		<key>siatka_kolumnaSzeroka_kolumnaWaska</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Lewy</name>
+			<key>lewy</key>
+			<top>1</top>
+			<left>1</left>
+			<height>6</height>
+			<width>5</width>
+		</tile>
+		<tile>
+			<name>Prawy</name>
+			<key>prawy</key>
+			<top>1</top>
+			<left>6</left>
+			<height>6</height>
+			<width>3</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 2 kolumny: wąska + szeroka</name>
+		<key>siatka_kolumnaWaska_kolumnaSzeroka</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Lewy</name>
+			<key>lewy</key>
+			<top>1</top>
+			<left>1</left>
+			<height>6</height>
+			<width>3</width>
+		</tile>
+		<tile>
+			<name>Prawy</name>
+			<key>prawy</key>
+			<top>1</top>
+			<left>4</left>
+			<height>6</height>
+			<width>5</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 3 kolumny (równe)</name>
+		<key>siatka_3kolumny</key>
+		<gridWidth>9</gridWidth>
+		<gridHeight>7</gridHeight>
+		<tile>
+			<name>Lewy</name>
+			<key>lewy</key>
+			<top>1</top>
+			<left>1</left>
+			<height>7</height>
+			<width>3</width>
+		</tile>
+		<tile>
+			<name>Środek</name>
+			<key>srodek</key>
+			<top>1</top>
+			<left>4</left>
+			<height>7</height>
+			<width>3</width>
+		</tile>
+		<tile>
+			<name>Prawy</name>
+			<key>prawy</key>
+			<top>1</top>
+			<left>7</left>
+			<height>7</height>
+			<width>3</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - 2 wiersze: szeroki + wąski</name>
+		<key>siatka_wierszSzeroki_wierszWaski</key>
+		<gridWidth>8</gridWidth>
+		<gridHeight>6</gridHeight>
+		<tile>
+			<name>Góra</name>
+			<key>gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>4</height>
+			<width>8</width>
+		</tile>
+		<tile>
+			<name>Dół</name>
+			<key>dol</key>
+			<top>5</top>
+			<left>1</left>
+			<height>2</height>
+			<width>8</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - niska komórka + wysoka komórka + 2 komórki</name>
+		<key>siatka_niska_wysoka_2komorki</key>
+		<gridWidth>16</gridWidth>
+		<gridHeight>10</gridHeight>
+		<tile>
+			<name>Lewy góra</name>
+			<key>lewy_gora</key>
+			<top>1</top>
+			<left>1</left>
+			<height>3</height>
+			<width>13</width>
+		</tile>
+		<tile>
+			<name>Prawy góra</name>
+			<key>prawy_gora</key>
+			<top>1</top>
+			<left>14</left>
+			<height>5</height>
+			<width>3</width>
+		</tile>
+		<tile>
+			<name>Prawy dół</name>
+			<key>prawy_dol</key>
+			<top>6</top>
+			<left>14</left>
+			<height>5</height>
+			<width>3</width>
+		</tile>
+		<tile>
+			<name>Lewy dół</name>
+			<key>lewy_dol</key>
+			<top>4</top>
+			<left>1</left>
+			<height>7</height>
+			<width>13</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - duża, szerokna komórka + 3 małe komórki</name>
+		<key>siatka_duza_szeroka_3komorki</key>
+		<gridWidth>4</gridWidth>
+		<gridHeight>3</gridHeight>
+		<tile>
+			<name>Lewy</name>
+			<key>lewy</key>
+			<top>1</top>
+			<left>1</left>
+			<height>3</height>
+			<width>3</width>
+		</tile>
+		<tile>
+			<name>Prawy góra</name>
+			<key>prawy_gora</key>
+			<top>1</top>
+			<left>4</left>
+			<height>1</height>
+			<width>1</width>
+		</tile>
+		<tile>
+			<name>Prawy środek</name>
+			<key>prawy_srodek</key>
+			<top>2</top>
+			<left>4</left>
+			<height>1</height>
+			<width>1</width>
+		</tile>
+		<tile>
+			<name>Prawy dół</name>
+			<key>prawy_dol</key>
+			<top>3</top>
+			<left>4</left>
+			<height>1</height>
+			<width>1</width>
+		</tile>
+	</template>
+	<template>
+		<name>KAFLOWY - duża, szerokna komórka + 2 małe komórki</name>
+		<key>siatka_duza_szeroka_2komorki</key>
+		<gridWidth>3</gridWidth>
+		<gridHeight>2</gridHeight>
+		<tile>
+			<name>Lewy</name>
+			<key>lewy</key>
+			<top>1</top>
+			<left>1</left>
+			<height>2</height>
+			<width>2</width>
+		</tile>
+		<tile>
+			<name>Prawy góra</name>
+			<key>prawy_gora</key>
+			<top>1</top>
+			<left>3</left>
+			<height>1</height>
+			<width>1</width>
+		</tile>
+		<tile>
+			<name>Prawy dół</name>
+			<key>prawy_dol</key>
+			<top>2</top>
+			<left>3</left>
+			<height>1</height>
+			<width>1</width>
+		</tile>
+	</template>
+</templateMappings>

@@ -1,0 +1,7 @@
+The source of the content of this directory is Git epodreczniki-portal:
+1) all icons copied from 7c39d4eaca7f4ddd0b7175fef561b337ab1f8eeb
+2) removing GE subdirectory
+3) copied ONLY newly added icons from 8f9780f75665c32d4e58ccc744aa9c8bd993d1a7
+
+finally, changing width & height from 100 to 15 in all awesome-icons/*.svg
+

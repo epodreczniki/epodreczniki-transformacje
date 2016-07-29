@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roles>
+    <role key="JPOL3_Modulliteracki" value="mt_JPOL3_Modulliteracki"/>
+    <role key="JPOL3_Modulliteracki_Cwiczeniawprowadzajace"
+        value="sr_JPOL3_Modulliteracki_Cwiczeniawprowadzajace"/>
+    <role key="JPOL3_Modulliteracki_Cwiczeniawprowadzajace_display" value="Ćwiczenia wprowadzające"/>
+    <role key="JPOL3_Modulliteracki_Cwiczeniadotekstu"
+        value="sr_JPOL3_Modulliteracki_Cwiczeniadotekstu"/>
+    <role key="JPOL3_Modulliteracki_Cwiczeniadotekstu_display" value="Ćwiczenia do tekstu"/>
+    <role key="JPOL3_Modulliteracki_Zadaniatestoweczytaniezezrozumieniem"
+        value="sr_JPOL3_Modulliteracki_Zadaniatestoweczytaniezezrozumieniem"/>
+    <role key="JPOL3_Modulliteracki_Zadaniatestoweczytaniezezrozumieniem_display"
+        value="Zadania testowe (czytanie ze zrozumieniem)"/>
+    <role key="JPOL3_Modulliteracki_Tekstzrodlowy" value="sr_JPOL3_Modulliteracki_Tekstzrodlowy"/>
+    <role key="JPOL3_Modulliteracki_Tekstzrodlowy_display" value="Tekst źródłowy"/>
+    <role key="JPOL3_Moduljezykowy" value="mt_JPOL3_Moduljezykowy"/>
+    <role key="JPOL3_Moduljezykowy_Tekstzrodlowy" value="sr_JPOL3_Moduljezykowy_Tekstzrodlowy"/>
+    <role key="JPOL3_Moduljezykowy_Tekstzrodlowy_display" value="Tekst źródłowy"/>
+    <role key="JPOL3_Moduljezykowy_Cwiczeniadotekstu"
+        value="sr_JPOL3_Moduljezykowy_Cwiczeniadotekstu"/>
+    <role key="JPOL3_Moduljezykowy_Cwiczeniadotekstu_display" value="Ćwiczenia do tekstu"/>
+    <role key="JPOL3_Modulplastyczny" value="mt_JPOL3_Modulplastyczny"/>
+    <role key="JPOL3_Modulplastyczny_Cwiczeniawprowadzajace"
+        value="sr_JPOL3_Modulplastyczny_Cwiczeniawprowadzajace"/>
+    <role key="JPOL3_Modulplastyczny_Cwiczeniawprowadzajace_display" value="Ćwiczenia wprowadzające"/>
+    <role key="JPOL3_Modulplastyczny_Obrazzrodlowy" value="sr_JPOL3_Modulplastyczny_Obrazzrodlowy"/>
+    <role key="JPOL3_Modulplastyczny_Obrazzrodlowy_display" value="Obraz źródłowy"/>
+    <role key="JPOL3_Modulplastyczny_Cwiczeniadoobrazu"
+        value="sr_JPOL3_Modulplastyczny_Cwiczeniadoobrazu"/>
+    <role key="JPOL3_Modulplastyczny_Cwiczeniadoobrazu_display" value="Ćwiczenia do obrazu"/>
+    <role key="JPOL3_Modulleksykalnofrazeologiczny" value="mt_JPOL3_Modulleksykalnofrazeologiczny"/>
+    <role key="JPOL3_Modulleksykalnofrazeologiczny_Zestawcwiczenizadan"
+        value="sr_JPOL3_Modulleksykalnofrazeologiczny_Zestawcwiczenizadan"/>
+    <role key="JPOL3_Modulleksykalnofrazeologiczny_Zestawcwiczenizadan_display"
+        value="Zestaw ćwiczeń i zadań"/>
+    <role key="JPOL3_Modultestowy" value="mt_JPOL3_Modultestowy"/>
+    <role key="JPOL3_Modultestowy_Tekstzrodlowy" value="sr_JPOL3_Modultestowy_Tekstzrodlowy"/>
+    <role key="JPOL3_Modultestowy_Tekstzrodlowy_display" value="Tekst źródłowy"/>
+    <role key="JPOL3_Modultestowy_Zadaniadoczytaniazezrozumieniem"
+        value="sr_JPOL3_Modultestowy_Zadaniadoczytaniazezrozumieniem"/>
+    <role key="JPOL3_Modultestowy_Zadaniadoczytaniazezrozumieniem_display"
+        value="Zadania do czytania ze zrozumieniem"/>
+    <role key="JPOL3_Modulpodsumowujacy" value="mt_JPOL3_Modulpodsumowujacy"/>
+    <role key="JPOL3_Modulpodsumowujacy_Zestawzadanpodsumowujacych"
+        value="sr_JPOL3_Modulpodsumowujacy_Zestawzadanpodsumowujacych"/>
+    <role key="JPOL3_Modulpodsumowujacy_Zestawzadanpodsumowujacych_display"
+        value="Zestaw zadań podsumowujących"/>
+    <role key="JPOL4_5_Wstepdolekcji" value="mt_JPOL4_5_Wstepdolekcji"/>
+    <role key="JPOL4_5_Wstepdolekcji_Intro" value="sr_JPOL4_5_Wstepdolekcji_Intro"/>
+    <role key="JPOL4_5_Wstepdolekcji_Intro_display" value="Intro"/>
+    <role key="JPOL4_5_Wstepdolekcji_Tekstykulturyprzedlekcja"
+        value="sr_JPOL4_5_Wstepdolekcji_Tekstykulturyprzedlekcja"/>
+    <role key="JPOL4_5_Wstepdolekcji_Tekstykulturyprzedlekcja_display"
+        value="Teksty kultury – przed lekcją"/>
+    <role key="JPOL4_5_Wstepdolekcji_Jezykprzedlekcja"
+        value="sr_JPOL4_5_Wstepdolekcji_Jezykprzedlekcja"/>
+    <role key="JPOL4_5_Wstepdolekcji_Jezykprzedlekcja_display" value="Język – przed lekcją"/>
+    <role key="JPOL4_5_Tekstykultury" value="mt_JPOL4_5_Tekstykultury"/>
+    <role key="JPOL4_5_Problemy" value="mt_JPOL4_5_Problemy"/>
+    <role key="JPOL4_5_Problemy_Dyskusja" value="sr_JPOL4_5_Problemy_Dyskusja"/>
+    <role key="JPOL4_5_Problemy_Dyskusja_display" value="Dyskusja"/>
+    <role key="JPOL4_5_Problemy_Pracepisemne" value="sr_JPOL4_5_Problemy_Pracepisemne"/>
+    <role key="JPOL4_5_Problemy_Pracepisemne_display" value="Prace pisemne"/>
+    <role key="JPOL4_5_Problemy_Dzialaniatworcze" value="sr_JPOL4_5_Problemy_Dzialaniatworcze"/>
+    <role key="JPOL4_5_Problemy_Dzialaniatworcze_display" value="Działania twórcze"/>
+    <role key="JPOL4_5_Konteksty" value="mt_JPOL4_5_Konteksty"/>
+    <role key="JPOL4_5_Konteksty_Kontekst1" value="sr_JPOL4_5_Konteksty_Kontekst1"/>
+    <role key="JPOL4_5_Konteksty_Kontekst1_display" value="Kontekst 1"/>
+    <role key="JPOL4_5_Konteksty_Kontekst2" value="sr_JPOL4_5_Konteksty_Kontekst2"/>
+    <role key="JPOL4_5_Konteksty_Kontekst2_display" value="Kontekst 2"/>
+    <role key="JPOL4_5_Konteksty_Kontekst3" value="sr_JPOL4_5_Konteksty_Kontekst3"/>
+    <role key="JPOL4_5_Konteksty_Kontekst3_display" value="Kontekst 3"/>
+    <role key="JPOL4_5_Konteksty_Kontekst4" value="sr_JPOL4_5_Konteksty_Kontekst4"/>
+    <role key="JPOL4_5_Konteksty_Kontekst4_display" value="Kontekst 4"/>
+    <role key="JPOL4_5_Preteksty" value="mt_JPOL4_5_Preteksty"/>
+    <role key="JPOL4_5_Preteksty_Pretekst1" value="sr_JPOL4_5_Preteksty_Pretekst1"/>
+    <role key="JPOL4_5_Preteksty_Pretekst1_display" value="Pretekst 1"/>
+    <role key="JPOL4_5_Preteksty_Pretekst2" value="sr_JPOL4_5_Preteksty_Pretekst2"/>
+    <role key="JPOL4_5_Preteksty_Pretekst2_display" value="Pretekst 2"/>
+    <role key="JPOL4_5_Preteksty_Pretekst3" value="sr_JPOL4_5_Preteksty_Pretekst3"/>
+    <role key="JPOL4_5_Preteksty_Pretekst3_display" value="Pretekst 3"/>
+    <role key="JPOL4_5_Preteksty_Pretekst4" value="sr_JPOL4_5_Preteksty_Pretekst4"/>
+    <role key="JPOL4_5_Preteksty_Pretekst4_display" value="Pretekst 4"/>
+    <role key="JPOL4_5_Komunikacjaizycie" value="mt_JPOL4_5_Komunikacjaizycie"/>
+    <role key="JPOL4_5_Komunikacjaizycie_Intro" value="sr_JPOL4_5_Komunikacjaizycie_Intro"/>
+    <role key="JPOL4_5_Komunikacjaizycie_Intro_display" value="Intro"/>
+    <role key="JPOL4_5_Komunikacjaizycie_Miniwyklad" value="sr_JPOL4_5_Komunikacjaizycie_Miniwyklad"/>
+    <role key="JPOL4_5_Komunikacjaizycie_Miniwyklad_display" value="Miniwykład"/>
+    <role key="JPOL4_5_Komunikacjaizycie_Zadania" value="sr_JPOL4_5_Komunikacjaizycie_Zadania"/>
+    <role key="JPOL4_5_Komunikacjaizycie_Zadania_display" value="Zadania"/>
+    <role key="JPOL4_5_Gramatyka" value="mt_JPOL4_5_Gramatyka"/>
+    <role key="JPOL4_5_Gramatyka_Intro" value="sr_JPOL4_5_Gramatyka_Intro"/>
+    <role key="JPOL4_5_Gramatyka_Intro_display" value="Intro"/>
+    <role key="JPOL4_5_Gramatyka_Miniwyklad" value="sr_JPOL4_5_Gramatyka_Miniwyklad"/>
+    <role key="JPOL4_5_Gramatyka_Miniwyklad_display" value="Miniwykład"/>
+    <role key="JPOL4_5_Gramatyka_Zadania" value="sr_JPOL4_5_Gramatyka_Zadania"/>
+    <role key="JPOL4_5_Gramatyka_Zadania_display" value="Zadania"/>
+    <role key="JPOL4_5_Podsumowanie_GIM" value="mt_JPOL4_5_Podsumowanie_GIM"/>
+    <role key="JPOL4_5_Podsumowanie_GIM_Tekstykultury"
+        value="sr_JPOL4_5_Podsumowanie_GIM_Tekstykultury"/>
+    <role key="JPOL4_5_Podsumowanie_GIM_Tekstykultury_display" value="Teksty kultury"/>
+    <role key="JPOL4_5_Podsumowanie_GIM_Jezyk" value="sr_JPOL4_5_Podsumowanie_GIM_Jezyk"/>
+    <role key="JPOL4_5_Podsumowanie_GIM_Jezyk_display" value="Język"/>
+    <role key="JPOL4_5_Podsumowanie_LO" value="mt_JPOL4_5_Podsumowanie_LO"/>
+    <role key="JPOL4_5_Podsumowanie_LO_Slowakluczowe"
+        value="sr_JPOL4_5_Podsumowanie_LO_Slowakluczowe"/>
+    <role key="JPOL4_5_Podsumowanie_LO_Slowakluczowe_display" value="Słowa kluczowe"/>
+    <role key="JPOL4_5_Podsumowanie_LO_Dozrobienia" value="sr_JPOL4_5_Podsumowanie_LO_Dozrobienia"/>
+    <role key="JPOL4_5_Podsumowanie_LO_Dozrobienia_display" value="Do zrobienia"/>
+    <role key="JPOL4_5_Podsumowanie_LO_Mapaepoki" value="sr_JPOL4_5_Podsumowanie_LO_Mapaepoki"/>
+    <role key="JPOL4_5_Podsumowanie_LO_Mapaepoki_display" value="Mapa epoki"/>
+    <role key="JPOL4_5_Sprawdzeniewiadomosci" value="mt_JPOL4_5_Sprawdzeniewiadomosci"/>
+    <role key="JPOL4_5_Sprawdzeniewiadomosci_Tekstykulturytest"
+        value="sr_JPOL4_5_Sprawdzeniewiadomosci_Tekstykulturytest"/>
+    <role key="JPOL4_5_Sprawdzeniewiadomosci_Tekstykulturytest_display" value="Teksty kultury: test"/>
+    <role key="JPOL4_5_Sprawdzeniewiadomosci_Jezyktest"
+        value="sr_JPOL4_5_Sprawdzeniewiadomosci_Jezyktest"/>
+    <role key="JPOL4_5_Sprawdzeniewiadomosci_Jezyktest_display" value="Język: test"/>
+    <role key="JPOL4_5_Sprawdzeniewiadomosci_Egzaminprobny"
+        value="sr_JPOL4_5_Sprawdzeniewiadomosci_Egzaminprobny"/>
+    <role key="JPOL4_5_Sprawdzeniewiadomosci_Egzaminprobny_display" value="Egzamin próbny"/>
+    <role key="JPOL_E3_E4" value="mt_JPOL_E3_E4"/>
+    <role key="JPOL_E3_E4_Konteksty" value="sr_JPOL_E3_E4_Konteksty"/>
+    <role key="JPOL_E3_E4_Konteksty_display" value="Konteksty"/>
+    <role key="JPOL_E3_E4_Preteksty" value="sr_JPOL_E3_E4_Preteksty"/>
+    <role key="JPOL_E3_E4_Preteksty_display" value="Preteksty"/>
+    <role key="JPOL_E3_E4_Tekstykultury" value="sr_JPOL_E3_E4_Tekstykultury"/>
+    <role key="JPOL_E3_E4_Tekstykultury_display" value="Teksty kultury"/>
+    <role key="JPOL_E3_E4_Gramatyka" value="sr_JPOL_E3_E4_Gramatyka"/>
+    <role key="JPOL_E3_E4_Gramatyka_display" value="Gramatyka"/>
+    <role key="JPOL_E3_E4_Komunikacjaizycie" value="sr_JPOL_E3_E4_Komunikacjaizycie"/>
+    <role key="JPOL_E3_E4_Komunikacjaizycie_display" value="Komunikacja i życie"/>
+    <role key="JPOL_E3_E4_Zadaniowo" value="sr_JPOL_E3_E4_Zadaniowo"/>
+    <role key="JPOL_E3_E4_Zadaniowo_display" value="Zadaniowo"/>
+    <role key="JPOL_E3_E4_Dodatkowyopiszasobow" value="sr_JPOL_E3_E4_Dodatkowyopiszasobow"/>
+    <role key="JPOL_E3_E4_Dodatkowyopiszasobow_display" value="Dodatkowy opis zasobów"/>
+    <role key="HIST3_Zaproszenie" value="mt_HIST3_Zaproszenie"/>
+    <role key="HIST3_Zaproszenie_WprowadzenietekstWOMI"
+        value="sr_HIST3_Zaproszenie_WprowadzenietekstWOMI"/>
+    <role key="HIST3_Zaproszenie_WprowadzenietekstWOMI_display" value="Wprowadzenie [tekst + WOMI]"/>
+    <role key="HIST3_Zaproszenie_Zadanienarozgrzewke"
+        value="sr_HIST3_Zaproszenie_Zadanienarozgrzewke"/>
+    <role key="HIST3_Zaproszenie_Zadanienarozgrzewke_display" value="Zadanie na rozgrzewkę"/>
+    <role key="HIST3_Atocihistoria" value="mt_HIST3_Atocihistoria"/>
+    <role key="HIST3_Atocihistoria_" value="sr_HIST3_Atocihistoria_"/>
+    <role key="HIST3_Atocihistoria__display" value=""/>
+    <role key="HIST3_Podsumowanie" value="mt_HIST3_Podsumowanie"/>
+    <role key="HIST3_Podsumowanie_Cowiem" value="sr_HIST3_Podsumowanie_Cowiem"/>
+    <role key="HIST3_Podsumowanie_Cowiem_display" value="Co wiem"/>
+    <role key="HIST3_Podsumowanie_Copotrafie" value="sr_HIST3_Podsumowanie_Copotrafie"/>
+    <role key="HIST3_Podsumowanie_Copotrafie_display" value="Co potrafię"/>
+    <role key="HIST3_Podsumowanie_Zastanowsie" value="sr_HIST3_Podsumowanie_Zastanowsie"/>
+    <role key="HIST3_Podsumowanie_Zastanowsie_display" value="Zastanów się..."/>
+    <role key="HIST3_Kapsulaczasu" value="mt_HIST3_Kapsulaczasu"/>
+    <role key="HIST3_Kapsulaczasu_" value="sr_HIST3_Kapsulaczasu_"/>
+    <role key="HIST3_Kapsulaczasu__display" value=""/>
+    <role key="HIST4_5_Wprowadzenie" value="mt_HIST4_5_Wprowadzenie"/>
+    <role key="HIST4_5_Wprowadzenie_WOMIwykladwprowadzajacy"
+        value="sr_HIST4_5_Wprowadzenie_WOMIwykladwprowadzajacy"/>
+    <role key="HIST4_5_Wprowadzenie_WOMIwykladwprowadzajacy_display"
+        value="WOMI-wykład wprowadzający"/>
+    <role key="HIST4_5_Wprowadzenie_Cwiczenie" value="sr_HIST4_5_Wprowadzenie_Cwiczenie"/>
+    <role key="HIST4_5_Wprowadzenie_Cwiczenie_display" value="Ćwiczenie"/>
+    <role key="HIST4_5_Twojehistorie" value="mt_HIST4_5_Twojehistorie"/>
+    <role key="HIST4_5_Twojehistorie_" value="sr_HIST4_5_Twojehistorie_"/>
+    <role key="HIST4_5_Twojehistorie__display" value=""/>
+    <role key="HIST4_5_Zamiastpodsumowania" value="mt_HIST4_5_Zamiastpodsumowania"/>
+    <role key="HIST4_5_Zamiastpodsumowania_Cwiczenie"
+        value="sr_HIST4_5_Zamiastpodsumowania_Cwiczenie"/>
+    <role key="HIST4_5_Zamiastpodsumowania_Cwiczenie_display" value="Ćwiczenie"/>
+    <role key="HIST4_5_Zamiastpodsumowania_Jakmyslisz"
+        value="sr_HIST4_5_Zamiastpodsumowania_Jakmyslisz"/>
+    <role key="HIST4_5_Zamiastpodsumowania_Jakmyslisz_display" value="Jak myślisz..."/>
+    <role key="HIST4_5_Zamiastpodsumowania_Agdybytak"
+        value="sr_HIST4_5_Zamiastpodsumowania_Agdybytak"/>
+    <role key="HIST4_5_Zamiastpodsumowania_Agdybytak_display" value="A gdyby tak..."/>
+    <role key="HIST4_5_Kapsulaczasu" value="mt_HIST4_5_Kapsulaczasu"/>
+    <role key="HIST4_5_Kapsulaczasu_" value="sr_HIST4_5_Kapsulaczasu_"/>
+    <role key="HIST4_5_Kapsulaczasu__display" value=""/>
+    <role key="INF_Podstawowy" value="mt_INF_Podstawowy"/>
+    <role key="INF_Podstawowy_Tresc" value="sr_INF_Podstawowy_Tresc">
+        <parameter name="data-skin-role" value="tresc"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="INF_Podstawowy_Tresc_display" value="Treść"/>
+    <role key="INF_Podstawowy_Wprowadzenie" value="sr_INF_Podstawowy_Wprowadzenie">
+        <parameter name="data-skin-role" value="wstep"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="INF_Podstawowy_Wprowadzenie_display" value="Wprowadzenie"/>
+    <role key="INF_Podstawowy_Zadania" value="sr_INF_Podstawowy_Zadania">
+        <parameter name="data-skin-role" value="cwiczenia"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="INF_Podstawowy_Zadania_display" value="Zadania"/>
+    <role key="INF_Podstawowy_Slownik" value="sr_INF_Podstawowy_Slownik">
+        <parameter name="data-skin-role" value="slownik"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="INF_Podstawowy_Slownik_display" value="Słownik"/>
+    <role key="INF_Wprowadzenie" value="mt_INF_Wprowadzenie"/>
+    <role key="INF_Tresc" value="mt_INF_Tresc"/>
+    <role key="INF_Zadania" value="mt_INF_Zadania"/>
+    <role key="INF_Slowniczek" value="mt_INF_Slowniczek"/>
+    <role key="UP_ModulUP1" value="mt_UP_ModulUP1"/>
+    <role key="UP_ModulUP1_Trescglowna" value="sr_UP_ModulUP1_Trescglowna">
+        <parameter name="data-skin-role" value="tresc"/>
+        <parameter name="data-skin-type" value="tytul_lead"/>
+    </role>
+    <role key="UP_ModulUP1_Trescglowna_display" value="Treść główna"/>
+    <role key="UP_ModulUP1_Zadania" value="sr_UP_ModulUP1_Zadania">
+        <parameter name="data-skin-role" value="cwiczenia"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="UP_ModulUP1_Zadania_display" value="Zadania"/>
+    <role key="UP_ModulUP1_Slowniczek" value="sr_UP_ModulUP1_Slowniczek">
+        <parameter name="data-skin-role" value="slownik"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="UP_ModulUP1_Slowniczek_display" value="Słowniczek"/>
+    <role key="UP_ModulUP1_Podsumowanie" value="sr_UP_ModulUP1_Podsumowanie">
+        <parameter name="data-skin-role" value="podsumowanie"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="UP_ModulUP1_Podsumowanie_display" value="Podsumowanie"/>
+    <role key="UP_ModulUP2" value="mt_UP_ModulUP2"/>
+    <role key="UP_ModulUP2_Trescglowna" value="sr_UP_ModulUP2_Trescglowna">
+        <parameter name="data-skin-role" value="tresc"/>
+        <parameter name="data-skin-type" value="tytul_lead"/>
+    </role>
+    <role key="UP_ModulUP2_Trescglowna_display" value="Treść główna"/>
+    <role key="UP_ModulUP2_Slowniczek" value="sr_UP_ModulUP2_Slowniczek">
+        <parameter name="data-skin-role" value="slownik"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="UP_ModulUP2_Slowniczek_display" value="Słowniczek"/>
+    <role key="UP_ModulUP2_Podsumowanie" value="sr_UP_ModulUP2_Podsumowanie">
+        <parameter name="data-skin-role" value="podsumowanie"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="UP_ModulUP2_Podsumowanie_display" value="Podsumowanie"/>
+    <role key="EPO_Dokumentacja" value="mt_EPO_Dokumentacja"/>
+    <role key="EPO_Dokumentacja_Streszczenie" value="sr_EPO_Dokumentacja_Streszczenie"/>
+    <role key="EPO_Dokumentacja_Streszczenie_display" value="Streszczenie"/>
+    <role key="EPO_Dokumentacja_Historiazmian" value="sr_EPO_Dokumentacja_Historiazmian"/>
+    <role key="EPO_Dokumentacja_Historiazmian_display" value="Historia zmian"/>
+    <role key="EPO_Dokumentacja_Trescglowna" value="sr_EPO_Dokumentacja_Trescglowna"/>
+    <role key="EPO_Dokumentacja_Trescglowna_display" value="Treść główna"/>
+    <role key="EPO_Testykafli" value="mt_EPO_Testykafli"/>
+    <role key="EPO_Testykafli_wstep_i_tytul" value="sr_EPO_Testykafli_wstep_i_tytul">
+        <parameter name="data-skin-role" value="wstep"/>
+        <parameter name="data-skin-type" value="tytul"/>
+    </role>
+    <role key="EPO_Testykafli_wstep_i_tytul_display" value="wstep_i_tytul"/>
+    <role key="EPO_Testykafli_wstep_i_tytul_ikona" value="sr_EPO_Testykafli_wstep_i_tytul_ikona">
+        <parameter name="data-skin-role" value="wstep"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="EPO_Testykafli_wstep_i_tytul_ikona_display" value="wstep_i_tytul_ikona"/>
+    <role key="EPO_Testykafli_wstep_i_tytul_lead" value="sr_EPO_Testykafli_wstep_i_tytul_lead">
+        <parameter name="data-skin-role" value="wstep"/>
+        <parameter name="data-skin-type" value="tytul_lead"/>
+    </role>
+    <role key="EPO_Testykafli_wstep_i_tytul_lead_display" value="wstep_i_tytul_lead"/>
+    <role key="EPO_Testykafli_wstep_i_tytul_galeria" value="sr_EPO_Testykafli_wstep_i_tytul_galeria">
+        <parameter name="data-skin-role" value="wstep"/>
+        <parameter name="data-skin-type" value="tytul_galeria"/>
+    </role>
+    <role key="EPO_Testykafli_wstep_i_tytul_galeria_display" value="wstep_i_tytul_galeria"/>
+    <role key="EPO_Testykafli_cwiczenia_i_tytul" value="sr_EPO_Testykafli_cwiczenia_i_tytul">
+        <parameter name="data-skin-role" value="cwiczenia"/>
+        <parameter name="data-skin-type" value="tytul"/>
+    </role>
+    <role key="EPO_Testykafli_cwiczenia_i_tytul_display" value="cwiczenia_i_tytul"/>
+    <role key="EPO_Testykafli_cwiczenia_i_tytul_ikona"
+        value="sr_EPO_Testykafli_cwiczenia_i_tytul_ikona">
+        <parameter name="data-skin-role" value="cwiczenia"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="EPO_Testykafli_cwiczenia_i_tytul_ikona_display" value="cwiczenia_i_tytul_ikona"/>
+    <role key="EPO_Testykafli_cwiczenia_i_tytul_lead"
+        value="sr_EPO_Testykafli_cwiczenia_i_tytul_lead">
+        <parameter name="data-skin-role" value="cwiczenia"/>
+        <parameter name="data-skin-type" value="tytul_lead"/>
+    </role>
+    <role key="EPO_Testykafli_cwiczenia_i_tytul_lead_display" value="cwiczenia_i_tytul_lead"/>
+    <role key="EPO_Testykafli_cwiczenia_i_tytul_galeria"
+        value="sr_EPO_Testykafli_cwiczenia_i_tytul_galeria">
+        <parameter name="data-skin-role" value="cwiczenia"/>
+        <parameter name="data-skin-type" value="tytul_galeria"/>
+    </role>
+    <role key="EPO_Testykafli_cwiczenia_i_tytul_galeria_display" value="cwiczenia_i_tytul_galeria"/>
+    <role key="EPO_Testykafli_slownik_i_tytul" value="sr_EPO_Testykafli_slownik_i_tytul">
+        <parameter name="data-skin-role" value="slownik"/>
+        <parameter name="data-skin-type" value="tytul"/>
+    </role>
+    <role key="EPO_Testykafli_slownik_i_tytul_display" value="slownik_i_tytul"/>
+    <role key="EPO_Testykafli_slownik_i_tytul_ikona" value="sr_EPO_Testykafli_slownik_i_tytul_ikona">
+        <parameter name="data-skin-role" value="slownik"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="EPO_Testykafli_slownik_i_tytul_ikona_display" value="slownik_i_tytul_ikona"/>
+    <role key="EPO_Testykafli_slownik_i_tytul_lead" value="sr_EPO_Testykafli_slownik_i_tytul_lead">
+        <parameter name="data-skin-role" value="slownik"/>
+        <parameter name="data-skin-type" value="tytul_lead"/>
+    </role>
+    <role key="EPO_Testykafli_slownik_i_tytul_lead_display" value="slownik_i_tytul_lead"/>
+    <role key="EPO_Testykafli_slownik_i_tytul_galeria"
+        value="sr_EPO_Testykafli_slownik_i_tytul_galeria">
+        <parameter name="data-skin-role" value="slownik"/>
+        <parameter name="data-skin-type" value="tytul_galeria"/>
+    </role>
+    <role key="EPO_Testykafli_slownik_i_tytul_galeria_display" value="slownik_i_tytul_galeria"/>
+    <role key="EPO_Testykafli_tresc_i_tytul" value="sr_EPO_Testykafli_tresc_i_tytul">
+        <parameter name="data-skin-role" value="tresc"/>
+        <parameter name="data-skin-type" value="tytul"/>
+    </role>
+    <role key="EPO_Testykafli_tresc_i_tytul_display" value="tresc_i_tytul"/>
+    <role key="EPO_Testykafli_tresc_i_tytul_ikona" value="sr_EPO_Testykafli_tresc_i_tytul_ikona">
+        <parameter name="data-skin-role" value="tresc"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="EPO_Testykafli_tresc_i_tytul_ikona_display" value="tresc_i_tytul_ikona"/>
+    <role key="EPO_Testykafli_tresc_i_tytul_lead" value="sr_EPO_Testykafli_tresc_i_tytul_lead">
+        <parameter name="data-skin-role" value="tresc"/>
+        <parameter name="data-skin-type" value="tytul_lead"/>
+    </role>
+    <role key="EPO_Testykafli_tresc_i_tytul_lead_display" value="tresc_i_tytul_lead"/>
+    <role key="EPO_Testykafli_tresc_i_tytul_galeria" value="sr_EPO_Testykafli_tresc_i_tytul_galeria">
+        <parameter name="data-skin-role" value="tresc"/>
+        <parameter name="data-skin-type" value="tytul_galeria"/>
+    </role>
+    <role key="EPO_Testykafli_tresc_i_tytul_galeria_display" value="tresc_i_tytul_galeria"/>
+    <role key="EPO_Testykafli_podsumowanie_i_tytul" value="sr_EPO_Testykafli_podsumowanie_i_tytul">
+        <parameter name="data-skin-role" value="podsumowanie"/>
+        <parameter name="data-skin-type" value="tytul"/>
+    </role>
+    <role key="EPO_Testykafli_podsumowanie_i_tytul_display" value="podsumowanie_i_tytul"/>
+    <role key="EPO_Testykafli_podsumowanie_i_tytul_ikona"
+        value="sr_EPO_Testykafli_podsumowanie_i_tytul_ikona">
+        <parameter name="data-skin-role" value="podsumowanie"/>
+        <parameter name="data-skin-type" value="tytul_ikona"/>
+    </role>
+    <role key="EPO_Testykafli_podsumowanie_i_tytul_ikona_display" value="podsumowanie_i_tytul_ikona"/>
+    <role key="EPO_Testykafli_podsumowanie_i_tytul_lead"
+        value="sr_EPO_Testykafli_podsumowanie_i_tytul_lead">
+        <parameter name="data-skin-role" value="podsumowanie"/>
+        <parameter name="data-skin-type" value="tytul_lead"/>
+    </role>
+    <role key="EPO_Testykafli_podsumowanie_i_tytul_lead_display" value="podsumowanie_i_tytul_lead"/>
+    <role key="EPO_Testykafli_podsumowanie_i_tytul_galeria"
+        value="sr_EPO_Testykafli_podsumowanie_i_tytul_galeria">
+        <parameter name="data-skin-role" value="podsumowanie"/>
+        <parameter name="data-skin-type" value="tytul_galeria"/>
+    </role>
+    <role key="EPO_Testykafli_podsumowanie_i_tytul_galeria_display"
+        value="podsumowanie_i_tytul_galeria"/>
+</roles>
